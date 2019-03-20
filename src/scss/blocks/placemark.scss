@@ -1,0 +1,127 @@
+.placemark {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 5px 40px 5px 20px;
+  min-height: 50px;
+  border: 1px solid $border;
+  border-radius: 3px;
+}
+
+.placemark__dragzone {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 100%;
+  background-color: $border;
+
+  &:hover {
+    cursor: grab;
+  }
+}
+
+.placemark__icon {
+  position: absolute;
+  right: 3px;
+  top: 50%;
+  width: 14px;
+  height: 2px;
+  background-color: rgba($font, 0.8);
+}
+
+.placemark__icon::before {
+  position: absolute;
+  transform: translateY(-4px);
+  content: "";
+  width: 14px;
+  height: 2px;
+  background-color: rgba($font, 0.8);
+}
+
+.placemark__icon::after {
+  position: absolute;
+  transform: translateY(4px);
+  content: "";
+  width: 14px;
+  height: 2px;
+  background-color: rgba($font, 0.8);
+}
+
+.placemark__number {
+  display: block;
+  min-width: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: right;
+}
+
+.placemark__wrapper {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.placemark__title {
+  margin: 0 0 5px;
+  font-size: 16px;
+  line-height: 18px;
+  word-break: break-all;
+}
+
+.placemark__text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.placemark__button {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  font-size: 30px;
+  line-height: 30px;
+  text-align: center;
+  background-color: transparent;
+  border: 2px solid $border;
+  border-radius: 5px;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    display: block;
+    width: 16px;
+    height: 2px;
+    background-color: $button-reset;
+    transform-origin: 0 0;
+  }
+
+  &::before {
+    transform: rotate(-45deg) translate(-50%, -50%);
+  }
+
+  &::after {
+    transform: rotate(45deg) translate(-50%, -50%);
+  }
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+
+  &:active {
+    transform: translateY(-47%);
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px $focus;
+  }
+}
+

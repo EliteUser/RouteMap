@@ -1,0 +1,28 @@
+.placemarks {
+  margin-bottom: 20px;
+}
+
+.placemarks__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.placemarks__item {
+  margin-bottom: 5px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.placemarks__item--dragged {
+  opacity: 0.5;
+}
+
+.placemarks__item--dragover {
+  box-shadow: 0 -2px 0 0 $focus;
+}

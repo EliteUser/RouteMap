@@ -1,0 +1,24 @@
+.page-footer {
+  padding: 10px 30px;
+  margin-bottom: 20px;
+}
+
+.page-footer__link {
+  padding: 5px;
+  color: $font;
+  text-decoration: underline;
+  border-radius: 5px;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &:active {
+    color: rgba($font, 0.7);
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px $focus;
+  }
+}

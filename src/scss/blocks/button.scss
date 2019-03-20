@@ -1,0 +1,40 @@
+.button {
+  padding: 10px;
+  width: 150px;
+  display: block;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  color: $font-light;
+  background-color: $button;
+  border: none;
+  border-radius: 5px;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px $focus;
+  }
+}
+
+.button--reset {
+  background-color: $button-reset;
+}
+
+.button--disabled {
+  background-color: $button-disabled;
+
+  &:hover {
+    cursor: auto;
+    opacity: 1;
+  }
+}
+

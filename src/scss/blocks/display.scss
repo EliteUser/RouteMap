@@ -1,0 +1,59 @@
+.display {
+  padding: 10px;
+  border: 1px solid $border;
+  border-radius: 3px;
+}
+
+.display__fieldset {
+  padding: 0;
+  margin: 0;
+  border: none;
+  margin-bottom: 10px;
+}
+
+.display__label {
+  display: block;
+  font-size: 18px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+.display__input {
+  width: 100%;
+  padding: 7px;
+  margin-bottom: 10px;
+  font: inherit;
+  border: 1px solid $border;
+  border-radius: 3px;
+
+  &::placeholder {
+    color: rgba($font, 0.5);
+  }
+
+  &:hover {
+    border-color: rgba($focus, 0.7);
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px $focus;
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.display__buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.display__button {
+  margin-right: 10px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+

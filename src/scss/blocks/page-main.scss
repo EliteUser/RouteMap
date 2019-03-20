@@ -1,0 +1,26 @@
+.page-main {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 30px;
+  border-bottom: 2px solid $border;
+
+  @media (max-width: $screen-medium) {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+
+.page-main__wrapper {
+  margin-right: 20px;
+  width: 30%;
+
+  @media (max-width: $screen-medium) {
+    width: 100%;
+    padding: 0 5%;
+    margin: 0;
+  }
+}
+
+.page-main__display {
+  margin-bottom: 20px;
+}

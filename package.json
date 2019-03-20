@@ -1,0 +1,62 @@
+{
+  "name": "routemap",
+  "version": "0.0.1",
+  "private": true,
+  "description": "RouteMap",
+  "license": "",
+  "scripts": {
+    "eslint": "eslint \"src/js/**/*.js\"",
+    "stylelint": "stylelint \"src/scss/**/*.scss\" --syntax scss",
+    "test": "npm run eslint && npm run stylelint && npm run editorconfig",
+    "clean": "rm dist/bundle.js",
+    "editorconfig": "editorconfig-cli",
+    "build-prod": "gulp build --production",
+    "build-dev": "gulp build",
+    "start": "gulp build && gulp browserSync"
+  },
+  "devDependencies": {
+    "@babel/core": "7.2.2",
+    "@babel/preset-env": "7.2.3",
+    "@htmlacademy/editorconfig-cli": "1.x",
+    "autoprefixer": "^9.2.1",
+    "babel-loader": "^8.0.5",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-register": "^6.23.0",
+    "browser-sync": "^2.24.x",
+    "chai": "^4.2.0",
+    "del": "^3.0.0",
+    "eslint": "^5.11.0",
+    "eslint-config-htmlacademy": "^0.5.2",
+    "gh-pages": "^2.0.1",
+    "gulp": "^4.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-csso": "^3.0.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-if": "^2.0.2",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-mocha": "^6.0.0",
+    "gulp-plumber": "^1.2.x",
+    "gulp-postcss": "^8.0.x",
+    "gulp-posthtml": "^3.0.x",
+    "gulp-rename": "^1.2.x",
+    "gulp-sass": "^4.0.x",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-svgstore": "^7.0.0",
+    "gulp-uglify": "^3.0.1",
+    "gulp-webp": "^3.0.0",
+    "posthtml-include": "^1.1.0",
+    "stylelint": "^9.9.0",
+    "stylelint-config-htmlacademy": "^0.1.1",
+    "webpack": "^4.28.3",
+    "webpack-cli": "^3.1.2",
+    "webpack-stream": "^5.2.1",
+    "yargs": "^12.0.2"
+  },
+  "engines": {
+    "node": "11.3.0"
+  },
+  "dependencies": {
+    "drag-drop-touch": "^1.3.0"
+  }
+}
